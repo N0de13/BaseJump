@@ -1,0 +1,61 @@
+<!--
+    File: global.html
+Abstract: Global page HTML file.
+ Version: 1.0
+
+Simple button to allow a new window to open a base url from the longer url in the active window.
+
+-->
+<!DOCTYPE HTML>
+<script>
+// Register for the validate and command events.
+safari.application.addEventListener("command", performCommand, false);
+safari.application.addEventListener("validate", validateCommand, false);
+
+function performCommand(event)
+{
+	// You should always check the command.
+	if (event.command !== "base-jump")
+		return;
+
+	//  Get current url	
+	var currentURL = event.target.browserWindow.activeTab.url;
+
+	
+      
+	// If Current URL then run
+	
+	if (currentURL)
+	
+	
+	
+		event.target.browserWindow.activeTab.url = currentURL;
+		var newTab = safari.application.activeBrowserWindow.openTab();
+
+	// Divide up the URL at each /
+	
+		pathArray = currentURL.split("/",3);
+		newPathname = "";
+		for ( i = 0; i < pathArray.length; i++ ) {
+
+		newPathname += "/";
+
+		newPathname += pathArray[i];
+		var newString=newPathname.slice(1,newPathname.length); 
+		}
+      
+	//        alert(newString);
+        newTab.url = newString;
+		
+}
+
+function validateCommand(event)
+{
+	// You should always check the command.
+	if (event.command !== "base-jump")
+		return;
+
+	// Disable the target if the current tab has no URL.
+	event.target.disabled = !event.target.browserWindow.activeTab.url;
+}
+</script>
