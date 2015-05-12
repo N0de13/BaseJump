@@ -5,11 +5,11 @@
 	<key>Author</key>
 	<string>Joseph Murphy</string>
 	<key>Builder Version</key>
-	<string>9537.76.4</string>
+	<string>10600.4.10.4</string>
 	<key>CFBundleDisplayName</key>
-	<string>BaseJumper</string>
+	<string>BaseJump</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.toosquare.basejumper</string>
+	<string>com.toosquare.basejump</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -30,9 +30,9 @@
 				<key>Identifier</key>
 				<string>basejump</string>
 				<key>Image</key>
-				<string>basejumper.png</string>
+				<string>Icon.png</string>
 				<key>Label</key>
-				<string>BaseJumper</string>
+				<string>BaseJump</string>
 				<key>Tool Tip</key>
 				<string>Jump to root in new tab</string>
 			</dict>
@@ -45,6 +45,8 @@
 	</dict>
 	<key>Description</key>
 	<string>Allows a new tab to open to root path of a long URL.</string>
+	<key>DeveloperIdentifier</key>
+	<string>XFGF8G4YZ5</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -58,7 +60,7 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>http://www.toosquare.com/BaseURL.safariextz</string>
+	<string>http://www.toosquare.com/wp-content/uploads/2014/12/Info.plist</string>
 	<key>Website</key>
 	<string>http://www.toosquare.com</string>
 </dict>
